@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c100c">
+  <meta name="description" content="TOGO Chocolates — a Konaseema-inspired chocolate website concept named for East Godavari.">
+  <meta property="og:title" content="TOGO Chocolates">
+  <meta property="og:description" content="Milk and dark chocolate bars inspired by Konaseema and East Godavari.">
+  <title>TOGO Chocolates | East Godavari</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/bar-hero.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span class="star">✦</span> Inspired by the lush landscapes of Konaseema <span class="star">✦</span></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="TOGO Chocolates home">
+      <span class="brand-symbol" aria-hidden="true">✦</span>
+      <span class="brand-main"><span class="brand-word">TO<span class="brand-divider"></span>GO</span></span>
+      <span class="brand-chocolates">CHOCOLATES</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a class="active" href="#top">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#story">Our Story</a>
+      <a href="#konaseema">Konaseema</a>
+    </nav>
+    <div class="header-actions">
+      <button class="bag-button" type="button" id="open-bag" aria-label="Open enquiry bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1 13H5L4 8Zm4 0V6a4 4 0 0 1 8 0v2"/></svg>
+        <span class="bag-count" id="bag-count">0</span>
+      </button>
+      <button class="menu-button" type="button" id="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#top">Home</a><a href="#collection">Collection</a><a href="#story">Our Story</a><a href="#konaseema">Konaseema</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Premium milk and dark chocolate bars with nuts and berries"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-inner container">
+        <p class="eyebrow"><span class="line"></span> KONASEEMA · EAST GODAVARI</p>
+        <h1 id="hero-title">Chocolate bars with<br>the soul of <em>Konaseema.</em></h1>
+        <p class="hero-copy">Milk and dark chocolate bars with nuts, raspberries, cranberries, and a sense of East Godavari.</p>
+        <div class="hero-buttons"><a class="button button-gold" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a><a class="text-link" href="#story">Discover our story <span aria-hidden="true">→</span></a></div>
+        <div class="hero-scroll"><span class="scroll-line"></span> SCROLL TO EXPLORE</div>
+      </div>
+      <div class="hero-corner" aria-hidden="true">01 / 04</div>
+    </section>
+
+    <section class="intro-bar" aria-label="Brand introduction">
+      <span>GODAVARI INSPIRED</span><span class="ornament">✦</span><span>MILK &amp; DARK BARS</span><span class="ornament">✦</span><span>TOGO CHOCOLATES</span>
+    </section>
+
+    <section class="collection section-pad" id="collection" aria-labelledby="collection-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span class="line"></span> THE BAR COLLECTION</p><h2 id="collection-title">Two classics.<br><em>Endless delight.</em></h2></div>
+          <p>Explore milk and dark chocolate bars with nuts, raspberries, and cranberries.</p>
+        </div>
+        <div class="collection-grid">
+          <article class="collection-card reveal" data-item="Milk Chocolate Bars">
+            <div class="card-media"><img src="assets/milk-bars.jpg" alt="Milk chocolate bar with nuts, raspberries and dried cranberries" loading="lazy"><span class="card-number">01</span></div>
+            <div class="card-content"><div><p class="card-kicker">MILK CHOCOLATE · NUTS &amp; BERRIES</p><h3>Milk Chocolate Bars</h3></div><button class="round-arrow add-item" type="button" data-item="Milk Chocolate Bars" aria-label="Add milk chocolate bars to enquiry">↗</button></div>
+          </article>
+          <article class="collection-card reveal" data-item="Dark Chocolate Bars">
+            <div class="card-media"><img src="assets/dark-bars.jpg" alt="Dark chocolate bar with nuts, raspberries and dried cranberries" loading="lazy"><span class="card-number">02</span></div>
+            <div class="card-content"><div><p class="card-kicker">DARK CHOCOLATE · NUTS &amp; BERRIES</p><h3>Dark Chocolate Bars</h3></div><button class="round-arrow add-item" type="button" data-item="Dark Chocolate Bars" aria-label="Add dark chocolate bars to enquiry">↗</button></div>
+          </article>
+        </div>
+        <p class="collection-note">Product photography is illustrative. Select a collection to save it to your enquiry bag.</p>
+      </div>
+    </section>
+
+    <section class="story" id="story" aria-labelledby="story-title">
+      <div class="story-visual"><img src="assets/godavari-bars.jpg" alt="Chocolate bars beside a palm-lined Konaseema waterway" loading="lazy"><div class="story-visual-label">THE PLACE BEHIND THE NAME <span>↗</span></div></div>
+      <div class="story-content"><div class="story-content-inner reveal"><p class="eyebrow"><span class="line"></span> THE NAME &amp; THE PLACE</p><h2 id="story-title">A landscape<br>worth <em>savouring.</em></h2><p><strong>TO</strong> comes from <span lang="te">తూర్పు</span> (East), and <strong>GO</strong> from <span lang="te">గోదావరి</span> (Godavari). Together, TOGO carries East Godavari in its name.</p><p>Its visual world draws from Konaseema: coconut palms, river light, and the slow rhythm of the delta.</p><a class="inline-link" href="#konaseema">Explore Konaseema <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section class="quote-section" id="konaseema" aria-labelledby="place-title">
+      <div class="container reveal"><p class="eyebrow center"><span class="line"></span> ROOTED IN PLACE <span class="line"></span></p><h2 id="place-title">Where the river meets<br>the <em>coconut groves.</em></h2><p>Konaseema’s waterways and green landscape give TOGO its unmistakable visual character.</p><div class="river-art" aria-hidden="true"><svg viewBox="0 0 700 70" fill="none"><path d="M0 27c70 40 108-32 183 0s111 34 184 0 120-33 183 0 100 34 150 0"/><path d="M0 45c70 40 108-32 183 0s111 34 184 0 120-33 183 0 100 34 150 0"/></svg></div></div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title"><div class="closing-shade"></div><div class="container closing-inner reveal"><p class="eyebrow"><span class="line"></span> A BEAUTIFUL BEGINNING</p><h2 id="closing-title">Find your next<br><em>chocolate moment.</em></h2><p>Explore the milk and dark bar collection and save your favourites in an enquiry bag.</p><a class="button button-gold" href="#collection">View the collection <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-main"><div><a class="footer-logo" href="#top">TOGO <span>CHOCOLATES</span></a><p>East Godavari in name. Konaseema at heart.</p></div><div class="footer-links"><a href="#collection">Collection</a><a href="#story">Our Story</a><a href="#konaseema">Konaseema</a><button type="button" id="footer-bag">Enquiry Bag</button></div></div><div class="container footer-bottom"><span>© <span id="year"></span> TOGO Chocolates</span><span>Product images are illustrative</span><a href="#top">Back to top ↑</a></div></footer>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="bag-drawer" id="bag-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="drawer-title">Enquiry bag <span id="drawer-count">(0)</span></h2></div><button type="button" class="drawer-close" id="close-bag" aria-label="Close enquiry bag">×</button></div>
+    <div class="drawer-body" id="drawer-body"><p class="empty-state">Your bag is waiting for something lovely. Explore the collection to begin.</p></div>
+    <div class="drawer-foot"><p>Online ordering is coming soon. You can copy your selections for reference.</p><button class="button button-gold copy-button" type="button" id="copy-enquiry" disabled>Copy selection <span aria-hidden="true">↗</span></button><p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p></div>
+  </aside>
+</body>
+</html>
