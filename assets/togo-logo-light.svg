@@ -1,6 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 80" role="img" aria-labelledby="title">
   <title id="title">TOGO Chocolates</title>
-  <path d="M10 36c14-12 27-12 40-4 13 8 25 8 38-3M10 55c14-12 27-12 40-4 13 8 25 8 38-3" fill="none" stroke="#c99b62" stroke-width="5" stroke-linecap="round"/>
-  <text x="105" y="67" fill="#f4e8d7" font-family="Georgia, 'Times New Roman', serif" font-size="67" letter-spacing="-4">TOGO</text>
-  <text x="110" y="91" fill="#d6b587" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="5.4">CHOCOLATES</text>
+  <g fill="#d6aa70" aria-hidden="true">
+    <path d="M3 27c17-16 32-18 49-10 16 8 29 9 42-3-11 20-27 25-45 15C34 20 20 18 3 27Z"/>
+    <path d="M5 43c17-12 32-13 48-6 17 8 29 8 42-2-12 18-28 21-45 13-16-8-30-9-45-5Z"/>
+  </g>
+  <text x="105" y="54" fill="#f4e8d7" font-family="Baskerville, 'Times New Roman', serif" font-size="62" letter-spacing="-4.8">TOGO</text>
+  <text x="109" y="74" fill="#d6b587" font-family="'Avenir Next', Arial, sans-serif" font-size="10.5" letter-spacing="4.4">CHOCOLATES</text>
 </svg>
