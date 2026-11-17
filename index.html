@@ -10,22 +10,24 @@
   <title>TOGO Chocolates | East Godavari</title>
   <link rel="icon" href="favicon.svg?v=waves-2" type="image/svg+xml">
   <link rel="preload" as="image" href="assets/bar-hero.jpg">
-  <link rel="stylesheet" href="styles.css?v=logo-side-4">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=bar-discovery-1">
+  <script src="script.js?v=bar-discovery-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="announcement"><span class="star">✦</span> Inspired by the lush landscapes of Konaseema <span class="star">✦</span></div>
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="TOGO Chocolates home"><img src="assets/togo-logo-light.svg?v=side-4" alt="TOGO Chocolates" width="268" height="70"></a>
+    <a class="brand" href="#top" aria-label="TOGO Chocolates home"><img src="assets/togo-logo-light.svg?v=side-5" alt="TOGO Chocolates" width="268" height="70"></a>
     <nav class="desktop-nav" aria-label="Primary navigation">
       <a class="active" href="#top">Home</a>
       <a href="#collection">Collection</a>
+      <a href="#bar-finder">Shop bars</a>
       <a href="#packaging">Packaging</a>
       <a href="#story">Our Story</a>
       <a href="#konaseema">Konaseema</a>
     </nav>
     <div class="header-actions">
+      <button class="search-button" type="button" id="open-search" aria-label="Search chocolate bars"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"/><path d="m16 16 5 5"/></svg></button>
       <button class="bag-button" type="button" id="open-bag" aria-label="Open enquiry bag">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1 13H5L4 8Zm4 0V6a4 4 0 0 1 8 0v2"/></svg>
         <span class="bag-count" id="bag-count">0</span>
@@ -33,7 +35,7 @@
       <button class="menu-button" type="button" id="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-      <a href="#top">Home</a><a href="#collection">Collection</a><a href="#packaging">Packaging</a><a href="#story">Our Story</a><a href="#konaseema">Konaseema</a>
+      <a href="#top">Home</a><a href="#collection">Collection</a><a href="#bar-finder">Shop bars</a><a href="#packaging">Packaging</a><a href="#story">Our Story</a><a href="#konaseema">Konaseema</a>
     </nav>
   </header>
 
@@ -75,6 +77,23 @@
       </div>
     </section>
 
+    <section class="bar-finder section-pad" id="bar-finder" aria-labelledby="bar-finder-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span class="line"></span> DISCOVER YOUR BAR</p><h2 id="bar-finder-title">Find your <em>favourite.</em></h2></div>
+          <p>Choose milk or dark, then explore nuts, berries, or both. Each combination is shown in full and half-size concepts.</p>
+        </div>
+        <div class="bar-toolbar reveal">
+          <label class="bar-search-label" for="bar-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"/><path d="m16 16 5 5"/></svg><input id="bar-search" type="search" placeholder="Search milk, dark, nuts, berries…" autocomplete="off"></label>
+          <div class="bar-filters" role="group" aria-label="Chocolate type"><button type="button" class="filter-chip is-active" data-type="all" aria-pressed="true">All bars</button><button type="button" class="filter-chip" data-type="milk" aria-pressed="false">Milk</button><button type="button" class="filter-chip" data-type="dark" aria-pressed="false">Dark</button></div>
+          <label class="flavour-filter">With <select id="flavour-filter" aria-label="Filter by additions"><option value="all">All additions</option><option value="nuts">Nuts</option><option value="berries">Berries</option><option value="nuts-and-berries">Nuts &amp; berries</option></select></label>
+        </div>
+        <p class="bar-results" id="bar-results" role="status" aria-live="polite"></p>
+        <div class="bar-grid" id="bar-grid"></div>
+        <p class="collection-note">Bar and packaging images are design concepts. Flavours, sizes and availability will be confirmed before ordering opens.</p>
+      </div>
+    </section>
+
     <section class="packaging section-pad" id="packaging" aria-labelledby="packaging-title">
       <div class="container">
         <div class="section-heading packaging-heading reveal">
@@ -99,6 +118,8 @@
       </div>
     </section>
 
+    <section class="faq-section section-pad" id="faq" aria-labelledby="faq-title"><div class="container faq-layout"><div class="reveal"><p class="eyebrow"><span class="line"></span> GOOD TO KNOW</p><h2 id="faq-title">A few things<br><em>to know.</em></h2><p>TOGO is taking shape. Here is what the current bar and packaging concepts show.</p></div><div class="faq-list reveal"><details><summary>Which chocolates are in the collection?<span aria-hidden="true">+</span></summary><p>Milk and dark chocolate bars with nuts, berries, or nuts and berries together. White chocolate is not part of this collection.</p></details><details><summary>Are there full and half-size bars?<span aria-hidden="true">+</span></summary><p>Both sizes are represented in the packaging concepts. Final weights and availability will be shared when ordering opens.</p></details><details><summary>Can I order online now?<span aria-hidden="true">+</span></summary><p>Online checkout is not live yet. Save your preferred bars in the enquiry bag and copy your selection for later.</p></details><details><summary>Are the bars certified organic?<span aria-hidden="true">+</span></summary><p>Not yet. “Organic” appears in the packaging artwork as a concept only and is not a current product claim.</p></details></div></div></section>
+
     <section class="story" id="story" aria-labelledby="story-title">
       <div class="story-visual"><img src="assets/godavari-bars.jpg" alt="Chocolate bars beside a palm-lined Konaseema waterway" loading="lazy"><div class="story-visual-label">THE PLACE BEHIND THE NAME <span>↗</span></div></div>
       <div class="story-content"><div class="story-content-inner reveal"><p class="eyebrow"><span class="line"></span> THE NAME &amp; THE PLACE</p><h2 id="story-title">A landscape<br>worth <em>savouring.</em></h2><p><strong>TO</strong> comes from <span lang="te">తూర్పు</span> (East), and <strong>GO</strong> from <span lang="te">గోదావరి</span> (Godavari). Together, TOGO carries East Godavari in its name.</p><p>Its visual world draws from Konaseema: coconut palms, river light, and the slow rhythm of the delta.</p><a class="inline-link" href="#konaseema">Explore Konaseema <span aria-hidden="true">↗</span></a></div></div>
@@ -111,7 +132,9 @@
     <section class="closing" aria-labelledby="closing-title"><div class="closing-shade"></div><div class="container closing-inner reveal"><p class="eyebrow"><span class="line"></span> A BEAUTIFUL BEGINNING</p><h2 id="closing-title">Find your next<br><em>chocolate moment.</em></h2><p>Explore the milk and dark bar collection and save your favourites in an enquiry bag.</p><a class="button button-gold" href="#collection">View the collection <span aria-hidden="true">↗</span></a></div></section>
   </main>
 
-  <footer class="footer"><div class="container footer-main"><div><a class="footer-logo" href="#top" aria-label="TOGO Chocolates home"><img src="assets/togo-logo-light.svg?v=side-4" alt="TOGO Chocolates" width="268" height="70"></a><p>East Godavari in name. Konaseema at heart.</p></div><div class="footer-links"><a href="#collection">Collection</a><a href="#packaging">Packaging</a><a href="#story">Our Story</a><a href="#konaseema">Konaseema</a><button type="button" id="footer-bag">Enquiry Bag</button></div></div><div class="container footer-bottom"><span>© <span id="year"></span> TOGO Chocolates</span><span>Product images are illustrative</span><a href="#top">Back to top ↑</a></div></footer>
+  <footer class="footer"><div class="container footer-main"><div><a class="footer-logo" href="#top" aria-label="TOGO Chocolates home"><img src="assets/togo-logo-light.svg?v=side-5" alt="TOGO Chocolates" width="268" height="70"></a><p>East Godavari in name. Konaseema at heart.</p></div><div class="footer-links"><a href="#collection">Collection</a><a href="#bar-finder">Shop bars</a><a href="#packaging">Packaging</a><a href="#story">Our Story</a><a href="#konaseema">Konaseema</a><button type="button" id="footer-bag">Enquiry Bag</button></div></div><div class="container footer-bottom"><span>© <span id="year"></span> TOGO Chocolates</span><span>Product images are illustrative</span><a href="#top">Back to top ↑</a></div></footer>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title"><button class="product-close" id="close-product" type="button" aria-label="Close product details">×</button><div class="product-dialog-media"><img id="product-dialog-image" src="assets/milk-bars.jpg" alt=""></div><div class="product-dialog-copy"><p class="eyebrow"><span class="line"></span> BAR CONCEPT</p><h2 id="product-dialog-title"></h2><p id="product-dialog-description"></p><div class="product-size"><span>Choose a size</span><div role="group" aria-label="Bar size"><button type="button" class="size-choice is-active" data-size="Full" aria-pressed="true">Full bar</button><button type="button" class="size-choice" data-size="Half" aria-pressed="false">Half bar</button></div></div><p class="product-concept-note">Product image is illustrative. Final details and availability are to be confirmed.</p><button class="button button-gold" id="add-product" type="button">Add to enquiry <span aria-hidden="true">↗</span></button></div></dialog>
 
   <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
   <aside class="bag-drawer" id="bag-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>

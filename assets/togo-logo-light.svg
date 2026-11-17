@@ -5,5 +5,5 @@
     <path d="M5 43c17-12 32-13 48-6 17 8 29 8 42-2-12 18-28 21-45 13-16-8-30-9-45-5Z"/>
   </g>
   <text x="105" y="54" fill="#f4e8d7" font-family="Baskerville, 'Times New Roman', serif" font-size="62" letter-spacing="-4.8">TOGO</text>
-  <text x="109" y="74" fill="#d6b587" font-family="'Avenir Next', Arial, sans-serif" font-size="10.5" letter-spacing="4.4">CHOCOLATES</text>
+  <text x="105" y="74" fill="#d6b587" font-family="'Avenir Next', Arial, sans-serif" font-size="10.5" textLength="174" lengthAdjust="spacing">CHOCOLATES</text>
 </svg>
